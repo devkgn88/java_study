@@ -1,4 +1,4 @@
-package com.gn.practice01;
+package com.gn.practice;
 
 public class Practice01 {
 

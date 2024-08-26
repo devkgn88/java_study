@@ -37,7 +37,14 @@ public class VariableBasic {
 		System.out.println(2*pi*r);
 		System.out.println(pi*r*r);
 		System.out.println(pi*r*r*20);
-		System.out.println(pi*30);		
+		System.out.println(pi*30);
+		
+		// 5. 변수명
+		// int int;
+		int n_int;
+		
+		//int a = 29;
+		int today = 7;
 		
 	}
 }
