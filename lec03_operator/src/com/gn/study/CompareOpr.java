@@ -50,6 +50,36 @@ public class CompareOpr {
 		boolean test3 = str1 == str3; //false
 		System.out.println(test3);
 		
+		int a = 6;
+		int b = 5;
+		int c = 7;
+
+		// AND 연산자 사용 예제
+		boolean andResult = (a > b) && (a > c);
+		System.out.println("AND 연산 결과: " + andResult);
+
+		// OR 연산자 사용 예제
+		boolean orResult = (a > b) || (a > c);
+		System.out.println("OR 연산 결과: " + orResult);
 	
+		boolean isTrue = true;
+		boolean isFalse = !isTrue;
+		System.out.println("isFalse : "+isFalse);
+		// true && false -> false -> true
+		System.out.println(!(test1 && test3));
+		// true && !false -> true && true -> true
+		System.out.println(test1 && !test3);
+		
+		// 삼항 연산자
+		int x = 5;
+		int y = 10;
+		int max = (x > y) ? x : y;
+		
+		int z = 3;
+		int large = (x > y) ? (x > z ? x : z) : (y > z ? y : z);
+		System.out.println(large);
+				
+		
+		
 	}
 }
