@@ -43,5 +43,23 @@ public class ConditionStmt {
 			// 9보다 작고, 6보다 작고, 3보다 작은 수
 			System.out.println("3미만");
 		}
+		
+		// 중첩 if문
+		int target = -5;
+		if(target > 0) {
+			System.out.println("양수입니다.");
+			if(target % 2 == 0) {
+				System.out.println("짝수");
+			} else {
+				System.out.println("홀수");
+				if(target % 3 == 0) {
+					System.out.println("3의 배수");
+				}
+			}	
+		} else if(target < 0) {
+			System.out.println("음수입니다.");
+		} else {
+			System.out.println("0입니다.");
+		}
 	}
 }
