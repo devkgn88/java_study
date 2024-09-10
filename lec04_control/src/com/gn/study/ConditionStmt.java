@@ -61,5 +61,28 @@ public class ConditionStmt {
 		} else {
 			System.out.println("0입니다.");
 		}
+		
+		// switch문
+		int day = 2;
+		System.out.println("해당 요일은 : ");
+		switch(day) {
+		 case 0 : System.out.println("일요일"); break;
+		 case 1 : System.out.println("월요일"); break;
+		 case 2 : System.out.println("화요일"); break;
+		 case 3 : System.out.println("수요일"); break;
+		 case 4 : System.out.println("목요일"); break;
+		 case 5 : System.out.println("금요일"); break;
+		 case 6 : System.out.println("토요일"); break;
+		 default : System.out.println("잘못된 숫자입니다.");break;
+		}
+
+		int month = 7;
+		switch(month) {
+			case 1, 3, 5, 7, 8, 10, 12 : System.out.println("31일까지"); break;
+			case 4 : case 6 : case 9 : case 11 : System.out.println("30일까지"); break;
+			case 2 : System.out.println("28일까지"); break;
+			default : System.out.println("존재하지 않는 달입니다."); break;
+		}
+		
 	}
 }
