@@ -16,15 +16,15 @@ public class VariableBasic {
 		int age = 100;
 		
 		// 3. 변수 사용
-		// (1) 표준 출력
 		System.out.println(age);
 		System.out.println("age");
 		
-		// (2) 재할당
-		age = 90;
-		System.out.println(age);
+		// 4. 변수의 할당과 재할당
+		int score = 100;  
+		score = 200;     
+		System.out.println(score);
 		
-		// 4. 변수의 장점
+		// 5. 변수의 장점
 		// 변수 사용 X
 		System.out.println(2*3.141592653589793*10);
 		System.out.println(3.141592653589793*10*10);
@@ -39,7 +39,7 @@ public class VariableBasic {
 		System.out.println(pi*r*r*20);
 		System.out.println(pi*30);
 		
-		// 5. 변수명
+		// 6. 변수명
 		// int int;
 		int n_int;
 		
