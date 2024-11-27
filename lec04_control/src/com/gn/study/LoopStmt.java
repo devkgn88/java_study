@@ -60,5 +60,37 @@ public class LoopStmt {
 			}
 			System.out.println();
 		}
+		
+		// break를 이용하여 중첩 for문 멈추기 
+		// (1) 내부 for문
+		System.out.println("===== 내부 for문 =====");
+		for(int i = 0 ; i < 2 ; i++) {
+			System.out.println("1");
+			for(int j = 0 ; j < 3 ; j++) {
+				System.out.println("2");
+				break;
+			}
+			System.out.println("3");
+		}
+		// (2) 외부 for문
+		System.out.println("===== 외부 for문 =====");
+		for(int i = 0 ; i < 2 ; i++) {
+			System.out.println("1");
+			for(int j = 0 ; j < 3 ; j++) {
+				System.out.println("2");
+			}
+			System.out.println("3");
+			break;
+		}
+		
+		// while문
+		System.out.println("===== while문 =====");
+		int start = 1; // 초기값 설정
+
+		// while문을 사용하여 반복 실행
+		while (start <= 10) { // 조건 확인
+		    System.out.println(start); // 현재 start 값 출력
+		    start++; // start 값을 증가시켜 다음 반복을 준비
+		}
 	}
 }
