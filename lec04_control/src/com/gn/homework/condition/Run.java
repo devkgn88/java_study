@@ -1,4 +1,4 @@
-package com.gn.homework;
+package com.gn.homework.condition;
 
 import java.util.Scanner;
 
