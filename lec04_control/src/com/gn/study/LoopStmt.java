@@ -92,5 +92,35 @@ public class LoopStmt {
 		    System.out.println(start); // 현재 start 값 출력
 		    start++; // start 값을 증가시켜 다음 반복을 준비
 		}
+		
+		// do~while문 사용하기
+		int count1 = 10;
+		do {
+			System.out.print("출력1");
+			count1--;
+		}while(count1 > 0 && count1 < 10);
+
+		// while문 사용한 경우
+		int count2 = 10;
+		while(count2 > 0 && count2 < 10) {
+			System.out.print("출력2");
+			count2--;
+		}
+		
+		// continue 분기문
+		// break문 사용 예시
+		for (int i = 1; i <= 10; i++) {
+		    if (i % 2 == 0) {
+		        break; // 짝수를 만나면 전체 반복문 중지
+		    }
+		    System.out.println(i);
+		}
+		// continue문 사용 예시
+		for (int i = 1; i <= 10; i++) {
+		    if (i % 2 == 0) {
+		        continue; // 짝수일 때는 반복 중지하고 다음 반복으로 넘어감
+		    }
+		    System.out.println(i);
+		}
 	}
 }
