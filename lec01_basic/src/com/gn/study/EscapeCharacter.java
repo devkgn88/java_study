@@ -6,6 +6,6 @@ public class EscapeCharacter {
 		System.out.println("안녕하세요");
 		System.out.println("\"안녕하세요\"");
 		// hello 와 world 사이 줄바꾸기
-		System.out.println("hello\nworld");
+		System.out.println("hello\nworld"); 
 	}
 }
