@@ -22,9 +22,9 @@ public class CarController {
 		Car c4 = new Car();
 		
 		// 5. 클래스명은 같지만 패키지는 다른 클래스 import
-		com.gn.study.field.model.vo.Car c5 
-			= new com.gn.study.field.model.vo.Car();
-		
+//		com.gn.study.field.model.vo.Car c5 
+//			= new com.gn.study.field.model.vo.Car();
+//		
 		// 6. * 와일드 카드 사용
 		Scanner sc = new Scanner(System.in);
 		Date d = new Date();
