@@ -21,4 +21,16 @@ public class Smartphone {
 	public String sendMsg(String msg) {
 		return "메시지 \""+msg+"\"가 전송되었습니다.";
 	}
+	
+	public void checkWork() {
+        Hospital hospital = new Hospital();
+        // public 메소드: 누구나 호출 가능
+        hospital.emergencyCall();
+        // proteced 메소드
+        hospital.specialistConsultation(); 
+        // (default) 메소드
+        hospital.staffAnnouncement(); 
+        // private 메소드
+        // hospital.personalMedicalRecord();
+	}
 }
