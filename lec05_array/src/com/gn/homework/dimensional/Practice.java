@@ -228,4 +228,60 @@ public class Practice {
 			}
 			sc.close();
 		}
+		
+		public void practice07() {
+			String[] report = {"Introduction", "Research", "Conclusion"};
+			String[] copy = new String[report.length];
+			
+			for(int i = 0; i < report.length ; i++) {
+				copy[i] = report[i];
+			}
+			copy[0] ="Team Feedback";
+			
+			System.out.print("원본 보고서: ");
+			for(int i = 0 ; i < report.length ; i++) {
+				System.out.print(report[i]);
+				if(i != report.length-1) {
+					System.out.print(", ");
+				}
+			}
+			System.out.println();
+			System.out.print("복사된 보고서: ");
+			for(int i = 0 ; i < copy.length ; i++) {
+				System.out.print(copy[i]);
+				if(i != copy.length-1) {
+					System.out.print(", ");
+				}
+			}			
+		}
+		
+		public void practice08() {
+			String[] menu = {"Burger", "Pizza", "Pasta"};
+			String[] add = {"Salad","Soup"};
+			
+			String[] copy = new String[menu.length+add.length];
+			int i = 0;
+			for( ; i < menu.length ; i ++) {
+				copy[i] = menu[i];
+			}
+			for( ; i < menu.length + add.length ; i++) {
+				copy[i] = add[i-add.length-1];
+			}
+			
+			System.out.print("어제 메뉴판: ");
+			for(int x = 0 ; x < menu.length ; x++) {
+				System.out.print(menu[x]);
+				if(x != menu.length-1) {
+					System.out.print(", ");
+				}
+			}
+			System.out.println();
+			System.out.print("오늘 메뉴판: ");
+			for(int x = 0 ; x < copy.length ; x++) {
+				System.out.print(copy[x]);
+				if(x != copy.length-1) {
+					System.out.print(", ");
+				}
+			}	
+		}
 }
