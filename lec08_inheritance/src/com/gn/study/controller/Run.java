@@ -3,6 +3,7 @@ package com.gn.study.controller;
 import com.gn.study.model.vo.Cat;
 import com.gn.study.model.vo.Child;
 import com.gn.study.model.vo.Dog;
+import com.gn.study.model.vo.Flower;
 import com.gn.study.model.vo.Parent;
 
 public class Run {
@@ -26,5 +27,16 @@ public class Run {
 		
 		Child c1 = new Child();
 		Child c2 = new Child(48);
+		
+		System.out.println("=================");
+		
+		Flower f1 = new Flower("장미","빨간색");
+		Flower f2 = new Flower("장미","빨간색");
+		// equals
+		System.out.println(f1.equals(f2));
+		// toString
+		System.out.println(f1);
+		// hashCode
+		System.out.println(f1.hashCode());
 	}
 }
