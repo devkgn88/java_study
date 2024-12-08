@@ -1,7 +1,10 @@
 package com.gn.study.controller;
 
+import com.gn.study.model.vo.Animal;
 import com.gn.study.model.vo.Beverage;
+import com.gn.study.model.vo.Cat;
 import com.gn.study.model.vo.Coffee;
+import com.gn.study.model.vo.Dog;
 import com.gn.study.model.vo.Earth;
 import com.gn.study.model.vo.Mars;
 import com.gn.study.model.vo.OrangeJuice;
@@ -45,5 +48,11 @@ public class Run {
 		Planet p2 = new Mars();
 		p2.material();
 		
+		Animal dog = new Dog();
+		Animal cat = new Cat();
+        
+        dog.makeSound(); // 멍멍!
+        cat.makeSound(); // 야옹~
+        cat.breath();
 	}
 }
