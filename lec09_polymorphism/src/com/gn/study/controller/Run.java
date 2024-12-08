@@ -1,11 +1,13 @@
 package com.gn.study.controller;
 
+import com.gn.study.model.vo.Alarm;
 import com.gn.study.model.vo.Animal;
 import com.gn.study.model.vo.Beverage;
 import com.gn.study.model.vo.Cat;
 import com.gn.study.model.vo.Coffee;
 import com.gn.study.model.vo.Dog;
 import com.gn.study.model.vo.Earth;
+import com.gn.study.model.vo.FireAlarm;
 import com.gn.study.model.vo.Mars;
 import com.gn.study.model.vo.OrangeJuice;
 import com.gn.study.model.vo.Planet;
@@ -54,5 +56,9 @@ public class Run {
         dog.makeSound(); // 멍멍!
         cat.makeSound(); // 야옹~
         cat.breath();
+        
+        Alarm alarm = new FireAlarm();
+        System.out.println("알람 최대 볼륨: " + Alarm.MAX_VOLUME);
+        alarm.soundAlarm();
 	}
 }
