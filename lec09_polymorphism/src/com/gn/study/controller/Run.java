@@ -2,7 +2,10 @@ package com.gn.study.controller;
 
 import com.gn.study.model.vo.Beverage;
 import com.gn.study.model.vo.Coffee;
+import com.gn.study.model.vo.Earth;
+import com.gn.study.model.vo.Mars;
 import com.gn.study.model.vo.OrangeJuice;
+import com.gn.study.model.vo.Planet;
 
 public class Run {
 	public static void main(String[] args) {
@@ -30,6 +33,17 @@ public class Run {
 		// coffee.ice();
 		Coffee specialCoffee = (Coffee)coffee;
 		specialCoffee.ice();
+		
+		// 정적 바인딩
+		Planet myPlanet = new Planet();
+		myPlanet.description();
+		myPlanet.description(46);
+		
+		// 동적 바인딩
+		Planet p1 = new Earth();
+		p1.material();
+		Planet p2 = new Mars();
+		p2.material();
 		
 	}
 }
