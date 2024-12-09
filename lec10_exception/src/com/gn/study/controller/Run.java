@@ -1,6 +1,8 @@
 package com.gn.study.controller;
 
+import com.gn.study.model.vo.Account;
 import com.gn.study.model.vo.Calculator;
+import com.gn.study.model.vo.InsufficientBalanceException;
 import com.gn.study.model.vo.User;
 
 public class Run {
@@ -51,5 +53,11 @@ public class Run {
 //            System.out.println("예외 발생: " + e.getMessage());
 //        }
 
+        Account account = new Account("김철수",10000);
+        try {
+        	account.withdraw(15000);
+        }catch(InsufficientBalanceException e) {
+        	e.printStackTrace();
+        }
 	}
 }
