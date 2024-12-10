@@ -1,6 +1,7 @@
 package com.gn.study.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.gn.study.model.vo.Student;
@@ -37,6 +38,13 @@ public class Run {
 		} else {
 			System.out.println("contains : !=");
 		}
+		studentList.add(new Student("이영희",30));
+		studentList.add(new Student("홍길동",40));
+		
+//		Collections.sort(studentList);
+		Collections.sort(studentList, new Student());
+
+		System.out.println(studentList);
 		
 	}
 }
