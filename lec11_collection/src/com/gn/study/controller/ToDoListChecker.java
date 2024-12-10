@@ -23,6 +23,12 @@ public class ToDoListChecker {
             System.out.println("X");
             toDoList.add("코딩 공부하기");
         }
+        
+        System.out.println(toDoList.indexOf("코딩 공부하기"));
+        if(toDoList.indexOf("영화보기") == -1) {
+        	// 목록에 없다. 
+        	toDoList.add("영화보기");
+        }
 
         // 4. 전체 할 일 출력
         System.out.println("할 일 목록: " + toDoList);
