@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 import com.gn.study.model.vo.Student;
 
@@ -137,5 +138,23 @@ public class Run {
 			if(fruits.size() != 0) System.out.print(",");
 		}
 		
+		// Set<String> set4 = new HashSet<String>();
+		// Set<String> set4 = new LinkedHashSet<String>();
+		Set<String> set4 
+		= new TreeSet<String>(Collections.reverseOrder());
+		set4.add("동");
+		set4.add("서");
+		set4.add("남");
+		set4.add("북");
+		System.out.println(set4);
+		
+		Set<Integer> rndSet = new HashSet<Integer>();
+		rndSet.add(75);
+		rndSet.add(234);
+		rndSet.add(618);
+		System.out.println("정렬전 : "+rndSet);
+		Set<Integer> ascSet = new TreeSet<Integer>();
+		ascSet.addAll(rndSet);
+		System.out.println("정렬후 : "+ascSet);
 	}
 }
