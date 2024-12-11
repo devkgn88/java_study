@@ -82,16 +82,16 @@ public class Student implements Comparable<Student>{
 		return Objects.hash(name,age);
 	}
 	
-//	@Override
-//	public boolean equals(Object obj) {
-//		boolean result = false;
-//		if(obj instanceof Student) {
-//			Student other = (Student)obj;
-//			if(other.name.equals(this.name) 
-//				&& other.age == this.age) {
-//				result = true;
-//			}
-//		}
-//		return result;
-//	}
+	@Override
+	public boolean equals(Object obj) {
+		boolean result = false;
+		if(obj instanceof Student) {
+			Student other = (Student)obj;
+			if(other.name.equals(this.name) 
+				&& other.age == this.age) {
+				result = true;
+			}
+		}
+		return result;
+	}
 }

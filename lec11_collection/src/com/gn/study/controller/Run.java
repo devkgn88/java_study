@@ -68,5 +68,50 @@ public class Run {
 			System.out.println(s.hashCode());
 		}
 		
+		
+		// 삭제
+		city.remove("서울");
+		System.out.println(city);
+		
+		set1.remove(new Student("김철수",15));
+		System.out.println(set1);
+		
+		// 집합(합집합, 교집합, 차집합)
+        Set<Integer> class1 = new HashSet<Integer>();
+        class1.add(1);
+        class1.add(2);
+        class1.add(3);
+        Set<Integer> class2 = new HashSet<Integer>();
+        class2.add(2);
+        class2.add(3);
+        class2.add(4);
+        
+//		class1.addAll(class2);
+//		System.out.println("합집합 : "+class1);
+		
+//		class1.retainAll(class2);
+//		System.out.println("교집합 : "+class1);
+        
+        class1.removeAll(class2);
+        System.out.println("차집합 : "+class1);
+        
+        Set<Student> set2 = new HashSet<Student>();
+		set2.add(new Student("홍길동",20));
+		set2.add(new Student("송강",21));
+		set2.add(new Student("차은우",28));
+		// 합집합
+//		set1.addAll(set2);
+//		System.out.println(set1);
+		// 새로운 Set에 합하는 법
+//		Set<Student> set3 = new HashSet<Student>();
+//		set3.addAll(set1);
+//		set3.addAll(set2);
+//		System.out.println(set3);
+		// 교집합 
+//		set1.retainAll(set2);
+//		System.out.println(set1);
+		// 차집합
+		set1.removeAll(set2);
+		System.out.println(set1);
 	}
 }
