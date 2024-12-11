@@ -3,6 +3,7 @@ package com.gn.study.controller;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -113,5 +114,28 @@ public class Run {
 		// 차집합
 		set1.removeAll(set2);
 		System.out.println(set1);
+		
+		System.out.println(city);
+		city.add("서울");
+		city.add("대전");
+		city.add("대구");
+		for(String str : city) {
+			System.out.println(str);
+		}
+		
+		Set<String> fruits = new HashSet<String>();
+		fruits.add("사과");
+		fruits.add("바나나");
+		fruits.add("체리");
+		
+		Iterator<String> iterator = fruits.iterator();
+		
+		while(iterator.hasNext()) {
+			String fruit = iterator.next();
+			System.out.print(fruit);
+			iterator.remove();
+			if(fruits.size() != 0) System.out.print(",");
+		}
+		
 	}
 }
