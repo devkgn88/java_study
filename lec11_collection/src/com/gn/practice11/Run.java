@@ -9,6 +9,8 @@ import java.util.TreeMap;
 
 public class Run {
 	public static void main(String[] args) {
+		long before = System.currentTimeMillis();
+		
 		Map<Integer,Fruit> fruits=new HashMap<Integer,Fruit>();
 		fruits.put(3,new Fruit("포도","강화도",5,35000));
 		fruits.put(1,new Fruit("귤","제주",10,15000));
@@ -61,5 +63,7 @@ public class Run {
 		System.out.println("=== 포도 가격 인상 ===");
 		System.out.println(fruits.get(3));
 		
+		long after = System.currentTimeMillis();
+		System.out.println((after-before)+"밀리초 걸림");
 	}
 }
