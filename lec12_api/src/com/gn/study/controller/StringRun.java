@@ -22,6 +22,19 @@ public class StringRun {
 		String str2 = "my";
 		System.out.println("str2 : "+System.identityHashCode(str2));
 		
+		String text = "hi hello hi";
+		System.out.println(text.charAt(1));
+		text="안녕. 나는 김가남이야. 호호";
+		System.out.println("=== indexOf ===");
+		System.out.println(text.indexOf("나는"));
+		System.out.println(text.indexOf("없어"));
+		System.out.println(text.indexOf("."));
+		System.out.println("=== lastIndexOf ===");
+		System.out.println(text.lastIndexOf("."));
 		
+		System.out.println("=== replace ===");
+		String sentence ="System도 못해. String도 못해.";
+		sentence = sentence.replace("못해", "잘해");
+		System.out.println(sentence);
 	}
 }
