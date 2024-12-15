@@ -54,5 +54,16 @@ public class StringRun {
 		String result = String.join("→", seasons);
 		System.out.println(result);
 		
+		String cutTest =  "hello world";
+		System.out.println(cutTest.substring(6));
+		System.out.println(cutTest.substring(0, 4)); 
+		System.out.println(cutTest.substring(3,4));
+		
+		String original = "Hello World!";
+		String upperCase = original.toUpperCase();
+		System.out.println("대문자 변환: " + upperCase);
+		String lowerCase = original.toLowerCase();
+		System.out.println("소문자 변환: " + lowerCase);
+		
 	}
 }
