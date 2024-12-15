@@ -36,5 +36,23 @@ public class StringRun {
 		String sentence ="System도 못해. String도 못해.";
 		sentence = sentence.replace("못해", "잘해");
 		System.out.println(sentence);
+		
+		String empty1 = new String("");
+		String empty2 = new String(" ");
+		System.out.println("=== isBlank() ===");
+		System.out.println(empty1.isBlank());
+		System.out.println(empty2.isBlank());
+		System.out.println("=== isEmpty() ===");
+		System.out.println(empty1.isEmpty());
+		System.out.println(empty2.isEmpty());
+		System.out.println("=== length() ===");
+		System.out.println(empty1.length()==0);
+		System.out.println(empty2.length()==0);
+		
+		System.out.println("=== join ===");
+		String[] seasons = {"봄", "여름", "가을", "겨울"};
+		String result = String.join("→", seasons);
+		System.out.println(result);
+		
 	}
 }
